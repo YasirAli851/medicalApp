@@ -9,7 +9,7 @@ export default function App() {
 
   // Fetch data.json from public folder
   useEffect(() => {
-    fetch("./public/data.json")
+    fetch("/public/data.json")
       .then((res) => {
         if (!res.ok) throw new Error("Failed to fetch data.json");
         return res.json();
@@ -38,7 +38,7 @@ export default function App() {
     <div className="nmc-page">
       <div className="nmc-header">
         <div className="header-left">
-          <img src="./public/logo.jpg" alt="Logo" className="nmc-logo" />
+          <img src="/public/logo.jpg" alt="Logo" className="nmc-logo" />
           <h2>Indian Medical Commission</h2>
         </div>
         <div class="header-right">

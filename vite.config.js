@@ -13,6 +13,6 @@ import react from "@vitejs/plugin-react";
 
 // The base path MUST match your GitHub repository name exactly.
 export default defineConfig({
-  base: "/medical-registry/", // <--- CHANGED FROM /medicalApp/
+  base: "/medicalApp/", // <--- CHANGED FROM /medicalApp/
   plugins: [react()],
 });
